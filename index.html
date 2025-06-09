@@ -1,70 +1,223 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #f4d03f;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                font-family: sans-serif;
+            }
 
-        </div>
-        <div class="nav">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="principal">
-            <div class="intro">
+            h1, h2 {
+                font-family: 'Saira Semi Condensed', sans-serif;
+                font-weight: 600;
+            }
 
+            p, body {
+                font-family: 'Space Grotesk', sans-serif;
+                font-weight: 400;
+                line-height: 1.6; /* Mantém boa legibilidade */
+            }
+
+            header {
+                display: flex;
+
+                ul {
+                    display: flex;
+                }
+            }
+
+            .grid-container {
+                position: relative;
+                width: 600px;
+                height: 400px;
+                background: #f9f9f9;
+            }
+
+            /* Blocos cinza (conectores) */
+            .block.cinza {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background-color: #c0c0c0;
+                border-radius: 8px;
+                z-index: 1;
+            }
+
+            /* Posicionamento dos conectores */
+            .c1 { top: 110px; left: 120px; }
+            .c2 { top: 100px; left: 350px; }
+            .c3 { top: 300px; left: 100px; }
+            .c4 { top: 290px; left: 300px; }
+
+            /* Projetos coloridos */
+            .block.projeto {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                border-radius: 12px;
+                z-index: 10;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                opacity: 0.95;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+            .block.projeto:hover {
+                transform: scale(1.07);
+                z-index: 20;
+                cursor: pointer;
+                opacity: 1;
+                box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+            }
+
+            /* Posicionamento dos projetos com sobreposição leve (~20%) */
+            .p1 { background-color: #e74c3c; top: 40px; left: 40px; }
+            .p2 { background-color: #f1c40f; top: 5px; left: 250px; }
+            .p3 { background-color: #f39c12; top: 40px; left: 450px; }
+            .p4 { background-color: #bfcf00; top: 230px; left: 5px; }
+            .p5 { background-color: #87ceeb; top: 190px; left: 220px; }
+            .p6 { background-color: #ba55d3; top: 320px; left: 400px; }
+            .p7 { background-color: #cd853f; top: 390px; left: 180px; }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">
+                </> renanfochetto.dev
+            </h1>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="contact">
-
+        </header>
+        <main>
+            <section class="principal">
+                <div class="intro">
+                    <h2>
+                        👋 Hi, <br>I'm Renan Fochetto, a Front-End Engineer. <br>
+                        I design, build, and refine user interfaces for web and mobile applications.<br>
+                        My focus is on creating intuitive experiences with clean and efficient code.
+                    </h2>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li>self@renanfochetto.dev</li>
+                        <li>+55 11 9 3230-3469</li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Linkedin</a></li>
+                        <li><a href="">Github</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="intersection" data-type="first">
+                "Alguma ilustração em SVG funcionando como elemento de conexão entre as seções"
             </div>
-        </section>
-        <div class="intersection" data-type="first">
-
-        </div>
-        <section class="tools">
-            <div>
-
+            <section class="tools">
+                <div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>Expo</li>
+                        <li>Angular</li>
+                        <li>Vue.js</li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>REST API</li>
+                        <li>GraphQL</li>
+                        <li>Tailwind CSS</li>
+                        <li>SASS</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Vite</li>
+                        <li>Webpack</li>
+                        <li>DevTools</li>
+                        <li>Jest</li>
+                        <li>Cypress</li>
+                        <li>PlayWright</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="intersection" data-type="second">
+                "Alguma ilustração em SVG funcionando como elemento de conexão entre as seções"
             </div>
-        </section>
-        <div class="intersection" data-type="second">
-
-        </div>
-        <section class="creative">
-            <div>
-
+            <section class="creative">
+                <div>
+                    <p>
+                        1 - From the Macro to the Micro
+                        "Every idea begins as a vast universe of possibilities. The first step is to define its boundaries,
+                        shaping its existence."
+                    </p>
+                    <p>
+                        2 - Filtering Ideas
+                        "From chaos, clarity emerges. Separating noise from substance, refining what truly matters."
+                    </p>
+                    <p>
+                        3 - Modeling Concepts
+                        "Ideas take shape like sculptures—chiseling away the unnecessary until their essence is revealed."
+                    </p>
+                    <p>
+                        4 - Refining the Essence
+                        "Creation is a cycle of adjustments, testing, and discoveries. The essence is refined through exploration."
+                    </p>
+                    <p>
+                        5 - The Final Answer
+                        "From abstraction to existence. The moment of truth, when everything converges into something tangible."
+                    </p>
+                </div>
+            </section>
+            <div class="intersection" data-type="third">
+                "Alguma ilustração em SVG funcionando como elemento de conexão entre as seções"
             </div>
-        </section>
-        <div class="intersection" data-type="third">
+            <section class="projects">
+                    <div class="grid-container">
+                        <!-- Conectores cinza (sempre por baixo dos projetos) -->
+                        <div class="block cinza c1"></div>
+                        <div class="block cinza c2"></div>
+                        <div class="block cinza c3"></div>
+                        <div class="block cinza c4"></div>
 
-        </div>
-        <section class="projects">
-            <div>
-
-            </div>
-        </section>
-        <div class="intersection" data-type="fourth">
-
-        </div>
-        <section class="texts">
-            <div>
-
-            </div>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
-</body>
+                        <!-- Projetos coloridos (sobrepostos levemente) -->
+                        <div class="block projeto p1" title="Projeto 1"></div>
+                        <div class="block projeto p2" title="Projeto 2"></div>
+                        <div class="block projeto p3" title="Projeto 3"></div>
+                        <div class="block projeto p4" title="Projeto 4"></div>
+                        <div class="block projeto p5" title="Projeto 5"></div>
+                        <div class="block projeto p6" title="Projeto 6"></div>
+                        <div class="block projeto p7" title="Projeto 7"></div>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <p>Made with ❤️ by Renan Fochetto</p>
+            <ul>
+                <li>Email</li>
+                <li>Github</li>
+                <li>Linkedin</li>
+            </ul>
+        </footer>
+    </body>
 </html>
