@@ -1,7 +1,13 @@
+:root {
+    --section-color: #f4d03f;
+    --fade-level: 0;
+}
+
 body {
     margin: 0 auto;
     padding: 0;
-    background-color: #f4d03f;
+    background-color: var(--section-color);
+    transition: background-color 0.4s ease;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -277,35 +283,51 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    text-align: right;
     margin-block: 5rem 12rem;
 
     > div:first-child {
         border-bottom: 2px solid #000;
         box-shadow: 0 12px 8px -12px rgba(0, 0, 0, 0.6);
         padding-right: 3rem;
-        margin-bottom: 4rem;
+        margin-bottom: 8rem;
     }
 
     .grid-projects {
         display: flex;
         flex-direction: column;
+        gap: 6rem;
+
+        article:not(:last-child) {
+            border-bottom: 1px dotted #000;
+        }
 
         .project-card.reverse .card-image {
             grid-column: 5 / 11;
             grid-row: 1 / 2;
+
+            img {
+                border-top: 4px solid #000;
+                border-right: 4px solid #000;
+                border-left: none;
+            }
         }
 
         .project-card.reverse .card-info {
             grid-column: 1 / 6;
             grid-row: 1 / 2;
+            text-align: left;
+
+            .card-description {
+                align-items: flex-start;
+                text-align: left;
+            }
         }
 
         .project-card {
             display: grid;
             grid-template-columns: repeat(10, 1fr);
             align-items: center;
-            padding: 1rem;
+            padding: 1rem 1rem 6rem;
 
 
             .card-image {
@@ -313,8 +335,8 @@ h3 {
                 grid-row: 1 / 2;
 
                 img {
-                    border-top: 2px solid #000;
-                    border-left: 2px solid #000;
+                    border-top: 4px solid #000;
+                    border-left: 4px solid #000;
                     padding: 1rem;
                     border-radius: 24px;
                     width: 640px;
@@ -326,6 +348,7 @@ h3 {
                 display: flex;
                 flex-direction: column;
                 grid-column: 6 / 11;
+                text-align: right;
 
                 .card-title {
                     font-family: "Lacquer", system-ui;
@@ -347,8 +370,8 @@ h3 {
                     align-items: flex-end;
                     text-align: right;
                     padding: 0.8rem;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    color: #f4d03f;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    color: #fff;
                     border-radius: 24px;
                     order: 3;
                     gap: 1rem;
@@ -359,9 +382,16 @@ h3 {
                         justify-content: flex-end;
                     }
 
-                    img {
-                        width: 30px;
-                        height: 30px;
+                    .card-links svg path {
+                        fill: var(--section-color);
+                    }
+
+
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                        aspect-ratio: 1/1;
+                        object-fit: fit;
                     }
                 }
             }
@@ -393,7 +423,6 @@ footer {
     width: 100%;
     border-top: 2px solid #000;
     box-shadow: 0 -12px 8px -12px rgba(0, 0, 0, 0.6);
-    margin-top: 6rem;
 
     div {
 
