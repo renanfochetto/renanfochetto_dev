@@ -71,7 +71,7 @@ const initPortfolio = () => {
       nome: "SpaceApp",
       imagem: "assets/images/space_app.avif",
       alt: "Imagem do Site SpaceApp",
-      descricao:"Desenvolvimento de interfaces modernas com Styled Components, criando elementos visuais marcantes e funcionais. Componentes personalizados para exibir imagens, legendas e estilos únicos, trazendo mais identidade e consistência à experiência do usuário.",
+      descricao:"Development of modern interfaces using Styled Components, crafting visually striking and functional elements. Custom components for displaying images, captions, and unique styles, adding identity and consistency to the user experience.",
       repositorio: "https://github.com/renanfochetto/react-styled-components",
       deploy: "https://react-space-app-rnn.vercel.app/"
     },
@@ -79,7 +79,7 @@ const initPortfolio = () => {
       nome: "Fungi Finders",
       imagem: "assets/images/fungi_finders.avif",
       alt: "Imagem do Site Fungi Finders",
-      descricao:"Domínio de estilos avançados, organização inteligente do código e desenvolvimento de componentes reutilizáveis que garantem consistência, agilidade e personalidade ao projeto. Experiência na construção de Design Systems escaláveis que unem estética e funcionalidade.",
+      descricao:"Mastery of advanced styling, smart code organization, and development of reusable components that ensure consistency, agility, and personality in every project. Experienced in building scalable Design Systems that seamlessly blend aesthetics with functionality.",
       repositorio: "https://github.com/renanfochetto/fungi_finders",
       deploy: "https://fungi-finders-rnn.vercel.app/"
     },
@@ -87,7 +87,7 @@ const initPortfolio = () => {
       nome: "Aluroni",
       imagem: "assets/images/aluroni.avif",
       alt: "Imagem do Site Aluroni",
-      descricao:"Experiência focada em performance e eficiência com React. Otimizações que reduzem o tempo de resposta e elevam a fluidez da interface, aliando tecnologias como Virtual DOM, imutabilidade, memoização e ferramentas avançadas de análise. Tudo para criar experiências rápidas, responsivas e intuitivas.",
+      descricao:"Experience focused on performance and efficiency with React. Implements optimizations that reduce response times and enhance interface fluidity, leveraging technologies like the Virtual DOM, immutability, memoization, and advanced analysis tools. All aimed at crafting fast, responsive, and intuitive user experiences.",
       repositorio: "https://github.com/renanfochetto/react-performance-advanced",
       deploy: "https://react-performance-aluroni.vercel.app/"
     },
@@ -95,7 +95,7 @@ const initPortfolio = () => {
       nome: "Trato Tech",
       imagem: "assets/images/trato_tech.avif",
       alt: "Imagem do Site Trato Tech",
-      descricao:"Habilidade em gerenciar estados de forma eficiente com Redux e Redux Toolkit, garantindo aplicações organizadas e previsíveis. Aplicação prática de conceitos como imutabilidade, controle de mutações com Immer e estratégias que mantêm o código escalável, limpo e fácil de manter.",
+      descricao:"Skilled in efficiently managing state using Redux and Redux Toolkit, ensuring applications remain organized and predictable. Hands-on experience with concepts like immutability, mutation control using Immer, and strategies that keep code scalable, clean, and easy to maintain.",
       repositorio: "https://github.com/renanfochetto/react-redux-immer",
       deploy: "https://trato-tech-immer-main.vercel.app/"
     }
