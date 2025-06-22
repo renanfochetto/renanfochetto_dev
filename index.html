@@ -3,20 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS  -->
         <link rel="stylesheet" href="styles.css">
+
+        <!-- DESCRIPTION  -->
         <title>Renan Fochetto - Portfolio</title>
         <meta name="description" content="Portfolio of Renan Fochetto, a Front-End Developer specializing in creating intuitive and engaging digital experiences.">
+
+        <!-- FAVICON  -->
+        <link rel="icon" type="image/png" href="">
+
+        <!-- FONTS  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Lacquer&display=swap" rel="stylesheet">
+
+        <!-- SCRIPT  -->
         <script src="script.js" defer></script>
     </head>
     <body>
+
+        <!-- HEADER  -->
         <header class="header border-style flex-center between">
+
+            <!-- LOGO CONTAINER  -->
             <div class="flex-center">
-                <img class="image-large" src="assets/logo.webp" alt="">
+                <img class="image-large" src="assets/logo.avif" alt="">
                 <h1 class="logo-title"> renanfochetto.dev</h1>
             </div>
+
+            <!-- NAV CONTAINER  -->
             <nav class="nav">
                 <ul class="flex">
                     <li><a href="#projects">Projects</a></li>
@@ -24,8 +40,14 @@
                 </ul>
             </nav>
         </header>
+
+        <!-- MAIN  -->
         <main class="flex-column center">
+
+            <!-- PRINCIPAL  -->
             <section class="principal flex-center between">
+
+                <!-- INTRO  -->
                 <div class="intro">
                     <h2>👋🏻 Hi,</h2>
                     <h2>I'm Renan Fochetto, a Front-End Developer.</h2>
@@ -36,11 +58,15 @@
                         My focus is on creating intuitive and engaging digital experiences with clean, reliable, and efficient code.
                     </p>
                 </div>
+
+                <!-- CONTATO  -->
                 <div class="contact shadow-contact flex-column text-right align-end justify-center" id="contact">
                     <ul class="flex-column">
-                        <li>self@renanfochetto.dev</li>
-                        <li>+55 11 9 3230-3469</li>
+                        <li><a href="mailto:self@renanfochetto.dev">self@renanfochetto.dev</a></li>
+                        <li><a href="https://wa.me/5511932303469" target="_blank">+55 11 9 3230-3469</a></li>
                     </ul>
+
+                    <!-- LINKS SOCIAL MEDIA  -->
                     <ul class="flex-row">
                         <li>
                             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/renanfochetto">
@@ -100,10 +126,16 @@
                     </ul>
                 </div>
             </section>
+
+            <!-- TOOLS  -->
             <section class="tools text-right" id="tools">
+
+                <!-- TITLE  -->
                 <div class="border-style">
                     <h3 class="title-section">Tools</h3>
                 </div>
+
+                <!-- ICONS  -->
                 <div class="tools-container">
                     <ul class="technologies grid">
                         <li class="flex-column center">
@@ -237,11 +269,19 @@
                     </ul>
                 </div>
             </section>
+
+            <!-- PROCESS  -->
             <section class="process" id="process">
+
+                <!-- TITLE  -->
                 <div class="border-style">
                     <h3 class="title-section">The Process</h3>
                 </div>
+
+                <!-- PROCESS CARDS  -->
                 <div class="process-container flex-center center">
+
+                    <!-- COLUMN ODD  -->
                     <div class="process-column flex-column" data-type="odd">
                         <div class="process-card border-process flex-column">
                             <div class="process-icons flex">
@@ -266,14 +306,18 @@
                         <div class="process-card border-process flex-column">
                             <div class="process-icons flex">
                                 <img class="image-large" src="assets/icons/process/chegada.svg" alt="">
-                                <img class="image-large" src="assets/icons/process/site.svg" alt="">
+                                <img class="image-large" src="assets/icons/process/responsive.svg" alt="">
                             </div>
                             <h4>The Final Answer</h4>
                             <p class="text-left">
                                 Abstraction becomes reality. The decisive moment when all elements converge into a clear, expressive, meaningful, and refined outcome.                            </p>
                         </div>
                     </div>
+
+                    <!-- SEPARADOR  -->
                     <div class="separator align-stretch"></div>
+
+                    <!-- COLUMN EVEN  -->
                     <div class="process-column flex-column" data-type="even">
                         <div class="process-card border-process flex-column content-end">
                             <div class="process-icons flex">
@@ -297,28 +341,43 @@
                                 Through iterative exploration, the core essence is refined, improving both function and form.                            </p>
                         </div>
                     </div>
-
                 </div>
             </section>
+
+            <!-- PROJECTS  -->
             <section class="projects" id="projects">
+
+                <!-- TITLE  -->
                 <div class="border-style">
                     <h3 class="title-section">Projects</h3>
                 </div>
+
+                <!-- PROJECT CARDS  -->
                 <div class="projects-grid flex-center content-center">
-                    <article class="project-card flex-column">
-                        <div class="card-title">
-                            <h5>Lorem Ipsum</h5>
-                        </div>
+                    <article class="project-card flex-column shadow-contact">
+
+                        <!-- IMAGE PROJECT  -->
                         <div class="card-image">
                             <img class="image-wide border-card shadow-card" src="assets/images/space_app.avif" alt="">
                         </div>
+
+                        <!-- PROJECT INFO  -->
                         <div class="card-info flex-column">
                             <div class="card-description flex-column text-left align-start shadow-description">
+
+                                <!-- PROJECT TITLE  -->
+                                <div class="card-title">
+                                    <h5>Lorem Ipsum</h5>
+                                </div>
+
+                                <!-- PROJECT DESCRIPTION  -->
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
                                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
+
+                                <!-- PROJECT LINKS  -->
                                 <div class="card-links flex justify-end">
                                     <a href="">
                                         <svg
@@ -361,7 +420,11 @@
                             </div>
                         </div>
                     </article>
+
+                    <!-- PROJECT GALLERY  -->
                     <div class="project-gallery flex-column center">
+
+                        <!-- PROJECTS  -->
                         <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/space_app.avif" alt=""></div>
                         <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/fungi_finders.avif" alt=""></div>
                         <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/aluroni.avif" alt=""></div>
@@ -370,19 +433,27 @@
                 </div>
             </section>
         </main>
+
+        <!-- FOOTER  -->
         <footer class="flex-center between shadow-footer" id="footer">
             <div>
+
+                <!-- FOOTER CONTACT  -->
                 <ul class="flex-column">
-                    <li>self@renanfochetto.dev</li>
-                    <li>+55 11 9 3230-3469</li>
+                    <li><a href="mailto:self@renanfochetto.dev">self@renanfochetto.dev</a></li>
+                    <li><a href="https://wa.me/5511932303469" target="_blank">+55 11 9 3230-3469</a></li>
                 </ul>
             </div>
+
+            <!-- FOOTER COPYWRIGHT  -->
             <div>
                 <p>© 2025 renanfochetto.dev</p>
             </div>
+
+            <!-- FOOTER SOCIAL MEDIA  -->
             <ul class="flex-center center">
                 <li>
-                    <a href="">
+                    <a href="mailto:self@renanfochetto.dev">
                         <svg
                                 class="image-small"
                                 width="11.90625mm"
@@ -400,7 +471,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/renanfochetto">
                         <svg
                                 class="image-small"
                                 width="11.90625mm"
@@ -416,7 +487,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/renanfochetto">
                         <svg
                                 class="image-small"
                                 width="45"
@@ -437,7 +508,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rnn.arts/">
                         <svg
                                 class="image-small"
                                 width="11.90625mm"

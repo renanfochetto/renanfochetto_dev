@@ -165,12 +165,40 @@
         /*BOX-SHADOW*/
         --shadow-contact: 12px 0 12px -12px rgba(0, 0, 0, 0.6);
         --shadow-card: -10px -10px 12px -10px rgba(0, 0, 0, 0.6);
-        --shadow-description: 0 0 4px -12px rgba(0, 0, 0, 0.6);
+        --shadow-description: 0 0 12px 2px rgba(0, 0, 0, 0.6);
         --shadow-gallery: 0 0 12px 6px rgba(0, 0, 0, 0.2);
         --shadow-footer: 0 -12px 8px -12px rgba(0, 0, 0, 0.6);
     }
 
     /*GLOBAL STYLES*/
+
+    /*BARRA DE ROLAGEM*/
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: var(--section-color-dark) var(--section-color);
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: var(--section-color);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--section-color-dark);
+        border-radius: 0.5rem;
+        border: var(--border-type);
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+        html {
+            scroll-behavior: smooth;
+        }
+    }
+
+    /*BODY E HTML*/
+    html{
+        line-height: 1.6;
+    }
+
     body {
         background-color: var(--section-color);
         transition: background-color 0.4s ease;
@@ -495,11 +523,11 @@
     /*PROJECTS*/
     .projects-grid {
         gap: var(--gap-600);
-        margin-block: 6rem 15rem;
+        margin-block: 8rem;
 
         /*GALLERY*/
         .project-gallery {
-            padding-top: 5rem;
+            cursor: pointer;
             width: var(--block-size-sm);
             gap: var(--gap-300);
 
@@ -523,7 +551,9 @@
         /*CONTAINER IMAGE*/
         .project-card {
             width: var(--block-size-lg);
+            padding-right: 0.5rem;
             gap: var(--gap-200);
+            border-right: var(--border-type);
             transition: opacity 0.5s ease;
 
             /*IMAGE*/
@@ -539,22 +569,23 @@
             font-family: var(--ff-secondary), system-ui;
             font-size: var(--font-size-heading-lg);
             font-weight: 700;
-            margin-left: 3rem;
+            margin-left: 1rem;
         }
 
         /*CARD CONTAINER*/
         .card-description {
-            padding: 1.6rem;
-            min-height: 8rem;
+            padding: 1.2rem 1.6rem;
+            min-height: 16rem;
             background-color: rgba(0, 0, 0, 0.8);
             border-radius: var(--border-radius-1);
+            justify-content: space-between;
             width: var(--block-size-xl);
-            gap: var(--gap-300);
+            gap: var(--gap-100);
 
             /*TEXT*/
             p {
-                font-size: var(--font-size-md);
-                font-weight: 500;
+                font-size: var(--font-size-sm);
+                padding-block: 0.5rem 1rem;
             }
 
             /*LINKS*/
