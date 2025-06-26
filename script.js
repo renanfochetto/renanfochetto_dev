@@ -71,7 +71,7 @@ const initPortfolio = () => {
       nome: "SpaceApp",
       imagem: "assets/images/space_app.avif",
       alt: "Imagem do Site SpaceApp",
-      descricao:"Development of modern interfaces using Styled Components, crafting visually striking and functional elements. Custom components for displaying images, captions, and unique styles, adding identity and consistency to the user experience.",
+      descricao:"Development of modern interfaces using Styled Components, crafting visually striking and functional elements.",
       repositorio: "https://github.com/renanfochetto/react-styled-components",
       deploy: "https://react-space-app-rnn.vercel.app/"
     },
@@ -79,7 +79,7 @@ const initPortfolio = () => {
       nome: "Fungi Finders",
       imagem: "assets/images/fungi_finders.avif",
       alt: "Imagem do Site Fungi Finders",
-      descricao:"Mastery of advanced styling, smart code organization, and development of reusable components that ensure consistency, agility, and personality in every project. Experienced in building scalable Design Systems that seamlessly blend aesthetics with functionality.",
+      descricao:"Mastery of advanced styling, smart code organization, and development of reusable components that ensure consistency, and personality.",
       repositorio: "https://github.com/renanfochetto/fungi_finders",
       deploy: "https://fungi-finders-rnn.vercel.app/"
     },
@@ -87,7 +87,7 @@ const initPortfolio = () => {
       nome: "Aluroni",
       imagem: "assets/images/aluroni.avif",
       alt: "Imagem do Site Aluroni",
-      descricao:"Experience focused on performance and efficiency with React. Implements optimizations that reduce response times and enhance interface fluidity, leveraging technologies like the Virtual DOM, immutability, memoization, and advanced analysis tools. All aimed at crafting fast, responsive, and intuitive user experiences.",
+      descricao:"Experience focused on performance and efficiency with React. Implements optimizations that reduce response times and enhance interface fluidity.",
       repositorio: "https://github.com/renanfochetto/react-performance-advanced",
       deploy: "https://react-performance-aluroni.vercel.app/"
     },
@@ -95,7 +95,7 @@ const initPortfolio = () => {
       nome: "Trato Tech",
       imagem: "assets/images/trato_tech.avif",
       alt: "Imagem do Site Trato Tech",
-      descricao:"Skilled in efficiently managing state using Redux and Redux Toolkit, ensuring applications remain organized and predictable. Hands-on experience with concepts like immutability, mutation control using Immer, and strategies that keep code scalable, clean, and easy to maintain.",
+      descricao:"Skilled in efficiently managing state using Redux and Redux Toolkit, ensuring applications remain organized and predictable.",
       repositorio: "https://github.com/renanfochetto/react-redux-immer",
       deploy: "https://trato-tech-immer-main.vercel.app/"
     }
