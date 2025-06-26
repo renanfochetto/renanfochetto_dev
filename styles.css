@@ -877,7 +877,7 @@
         /*CARD CONTAINER*/
         .card-description {
             padding: 0.8rem 1.6rem 0.6rem;
-            min-height: 19rem;
+            min-height: 15rem;
             background-color: rgba(0, 0, 0, 0.75);
             border-radius: var(--border-radius-1);
             justify-content: space-between;
@@ -924,7 +924,7 @@
             }
 
             .card-description {
-                min-height: 16rem;
+                min-height: 12rem;
 
                 p {
                     font-size: var(--font-size-xs);
@@ -970,7 +970,7 @@
 
                     .card-description {
                         width: 100%;
-                        min-height: 14rem;
+                        min-height: 11rem;
                     }
                 }
             }
