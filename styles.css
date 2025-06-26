@@ -247,7 +247,7 @@
         font-size: var(--fs-700);
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         html {
             line-height: 1.5;
         }
@@ -269,7 +269,7 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
         html {
             line-height: 1.4;
         }
@@ -291,7 +291,7 @@
         }
     }
 
-    @media (width < 599px) {
+    @media (width < 600px) {
         html {
             line-height: 1.2;
         }
@@ -352,7 +352,7 @@
         padding: 2rem;
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         body {
             flex-direction: column;
             gap : var(--gap-400);
@@ -367,7 +367,7 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
         main {
             margin-block: 2rem 4rem;
             gap: 4rem;
@@ -402,7 +402,7 @@
         aspect-ratio: 16/9;
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         .image-small {
             width: var(--figure-xs);
         }
@@ -416,7 +416,7 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
         .image-large {
             width: var(--figure-sm);
         }
@@ -543,7 +543,7 @@
         }
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         header {
             padding: 1rem 2rem;
 
@@ -558,7 +558,7 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
         header {
             padding: 1rem 1.5rem;
 
@@ -573,7 +573,7 @@
         }
     }
 
-    @media (width < 599px) {
+    @media (width < 600px) {
         header {
             justify-content: center;
 
@@ -623,7 +623,7 @@
         }
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         .principal {
             padding-inline: 2rem;
 
@@ -641,7 +641,7 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
         .principal {
             flex-direction: column;
             gap: var(--gap-600);
@@ -682,7 +682,7 @@
         }
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         .technologies {
             display: flex;
             flex-wrap: wrap;
@@ -692,7 +692,11 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
+        .tools {
+            width: 100%;
+        }
+
         .technologies {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -701,7 +705,7 @@
         }
     }
 
-    @media (width < 599px) {
+    @media (width < 600px) {
         .technologies {
             display: grid;
             grid-column-gap: var(--gap-100);
@@ -757,7 +761,7 @@
         }
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         .process-column {
             gap: 5rem;
 
@@ -791,7 +795,7 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
         .process-column {
             width: var(--block-size-xl);
             gap: 3rem;
@@ -897,7 +901,7 @@
         }
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         .projects-grid {
             gap: var(--gap-400);
 
@@ -931,7 +935,7 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
         .projects-grid {
             display: flex;
             flex-direction: column;
@@ -1001,7 +1005,7 @@
         }
     }
 
-    @media (width < 1079px) {
+    @media (width < 1080px) {
         footer {
             padding: 1rem 2rem;
             font-size: var(--font-size-sm);
@@ -1012,7 +1016,7 @@
         }
     }
 
-    @media (width < 767px) {
+    @media (width < 768px) {
         footer {
 
             p {
@@ -1021,7 +1025,7 @@
         }
     }
 
-    @media (width < 599px) {
+    @media (width < 600px) {
         footer {
             padding: 1rem 1.5rem;
 
