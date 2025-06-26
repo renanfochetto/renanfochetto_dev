@@ -706,9 +706,8 @@
 
     @media (width < 600px) {
         .technologies {
-            display: grid;
-            grid-column-gap: var(--gap-100);
-            grid-row-gap: var(--gap-200);
+            display: flex;
+            gap: 1.6rem;
             font-size: var(--font-size-xs);
         }
     }
