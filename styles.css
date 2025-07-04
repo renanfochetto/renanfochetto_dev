@@ -1,4 +1,4 @@
-@layer reset, base, layout, utilities, components;
+@layer reset, base, layout, utilities, components, animations;
 
 @layer reset {
     *,
@@ -580,7 +580,7 @@
             padding: 1rem 1.5rem;
 
             .logo-title {
-                font-size: var(--font-size-heading-xs);
+                font-size: var(--font-size-heading-xl);
             }
 
             .nav > ul {
@@ -776,12 +776,12 @@
                 margin-block: 0 3rem;
             }
 
-            .process icons img, p, h4 {
+            .process-icons img, p, h4 {
                 transition: transform 0.3s ease;
             }
 
             .process-icons img:hover, p:hover, h4:hover {
-                transform: scale(1.02);
+                transform: scale(1.03);
             }
         }
     }
@@ -1117,6 +1117,63 @@
             }
         }
     }
+}
+
+@layer animations {
+    .wave {
+        display: inline-block;
+        animation: wave-animation 2s ease-in-out 0.5s 2;
+        transform-origin: 70% 70%;
+    }
+
+    @keyframes wave-animation {
+        0%   { transform: rotate(0deg); }
+        10%  { transform: rotate(14deg); }
+        20%  { transform: rotate(-8deg); }
+        30%  { transform: rotate(14deg); }
+        40%  { transform: rotate(-4deg); }
+        50%  { transform: rotate(10deg); }
+        60%  { transform: rotate(0deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    /*1ª Etapa*/
+    .header {
+        border-bottom: 2px solid transparent;
+        box-shadow: none;
+        animation:
+                header-border 0.6s ease-out forwards,
+                header-shadow 0.6s ease-out 0.6s forwards;
+    }
+
+    @keyframes header-border {
+        to {
+            border-bottom: var(--border-type);
+        }
+    }
+
+    @keyframes header-shadow {
+        to {
+            box-shadow: var(--border-shadow);
+        }
+    }
+
+    /*2ª Etapa*/
+    .header > div,
+    .header .nav {
+        opacity: 0;
+        transform: translateY(40px);
+        animation: header-content 0.6s ease-out 0.6s forwards;
+    }
+
+    @keyframes header-content {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /*3ª Etapa*/
 }
 
 
