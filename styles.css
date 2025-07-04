@@ -535,12 +535,28 @@
     header {
         padding: 1rem;
 
+        div h1:hover {
+            transform: scale(1.03);
+        }
+
         /*Nav*/
         .nav > ul {
             gap: var(--gap-300);
             font-family: var(--ff-secondary), system-ui;
             font-size: var(--font-size-heading-regular);
             font-weight: 600;
+        }
+
+        .nav ul li {
+            transition: transform 0.3s ease;
+        }
+
+        .nav ul li:hover {
+            transform: scale(1.1);
+        }
+
+        .nav ul li:active {
+            transform: scale(0.9);
         }
     }
 
@@ -583,6 +599,15 @@
             }
         }
     }
+
+    section > div > h3 {
+        transition: transform 0.3s ease;
+    }
+
+    section > div > h3:hover {
+        transform: scale(1.01);
+    }
+
     /*Principal*/
     .principal {
         padding-inline: 1rem;
@@ -620,6 +645,18 @@
             /*Links*/
             ul:last-of-type {
                 gap: var(--gap-100);
+            }
+
+            ul li {
+                transition: transform 0.3s ease;
+            }
+
+            ul li:hover {
+                transform: scale(1.1);
+            }
+
+            ul li:active {
+                transform: scale(0.9);
             }
         }
     }
@@ -680,6 +717,11 @@
         li {
             gap: var(--gap-100);
             white-space: nowrap;
+            transition: transform 0.3s ease;
+        }
+
+        li:hover {
+            transform: scale(1.2);
         }
     }
 
@@ -732,6 +774,14 @@
 
             p {
                 margin-block: 0 3rem;
+            }
+
+            .process icons img, p, h4 {
+                transition: transform 0.3s ease;
+            }
+
+            .process-icons img:hover, p:hover, h4:hover {
+                transform: scale(1.02);
             }
         }
     }
@@ -837,6 +887,7 @@
             /*Gallery Container*/
             div {
                 border-radius: var(--border-radius-1);
+                transition: transform 0.3s ease;
 
                 /*Gallery Image*/
                 img {
@@ -846,8 +897,16 @@
                 }
             }
 
+            div:hover {
+                transform: scale(1.05);
+            }
+
+            div:active {
+                transform: scale(0.95);
+            }
+
             div.active img {
-                box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.8);
+                box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.9);
             }
         }
 
@@ -893,6 +952,14 @@
             /*Links*/
             .card-links {
                 gap: var(--gap-100);
+
+                a:hover {
+                    transform: scale(1.1);
+                }
+
+                a:active {
+                    transform: scale(0.9);
+                }
             }
 
             .card-links svg path {
@@ -996,12 +1063,28 @@
         div {
             ul {
                 gap: 0.2rem;
+
+                li:hover {
+                    transform: scale(1.1);
+                }
+
+                li:active {
+                    transform: scale(0.9);
+                }
             }
         }
 
         /*Links*/
         ul {
             gap: var(--gap-100);
+
+            li:hover {
+                transform: scale(1.1);
+            }
+
+            li:active {
+                transform: scale(0.9);
+            }
         }
     }
 
