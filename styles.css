@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lacquer';
+    src: url('/assets/fonts/Lacquer-Regular.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('/assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+}
+
 @layer reset, base, layout, utilities, components;
 
 @layer reset {
@@ -96,7 +117,7 @@
     :root {
 
         /*Colors*/
-        --section-color: hsl(48, 87%, 60%);
+        --section-color: hsl(48, 87%, 50%);
         --section-color-dark: hsl(0,0%, 0%);
         --section-color-light: hsl(0, 0%, 100%);
 
@@ -544,7 +565,6 @@
             gap: var(--gap-300);
             font-family: var(--ff-secondary), system-ui;
             font-size: var(--font-size-heading-regular);
-            font-weight: 600;
         }
 
         .nav ul li {

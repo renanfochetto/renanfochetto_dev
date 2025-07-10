@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- Css -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="styles.css"></noscript>
 
         <!-- Description -->
         <title>Renan Fochetto - Portfolio</title>
@@ -12,11 +14,6 @@
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="">
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Lacquer&display=swap" rel="stylesheet">
 
         <!-- Analytics -->
         <script data-goatcounter="https://renanfochetto.goatcounter.com/count"
@@ -32,7 +29,7 @@
 
             <!-- Logo Container -->
             <div class="flex-center">
-                <img class="image-large" src="assets/logo.avif" alt="">
+                <img class="image-large" src="assets/logo.avif" alt="Logo renanfochetto.dev" width="100" height="auto">
                 <h1 class="logo-title"> renanfochetto.dev</h1>
             </div>
 
@@ -66,14 +63,14 @@
                 <!-- Contato -->
                 <div class="contact shadow-contact flex-column text-right justify-center" id="contact">
                     <ul class="flex-column">
-                        <li><a href="mailto:self@renanfochetto.dev">self@renanfochetto.dev</a></li>
-                        <li><a href="https://wa.me/5511932303469" target="_blank">+55 11 9 3230-3469</a></li>
+                        <li><a href="mailto:self@renanfochetto.dev" aria-label="Enviar email para Renan Fochetto">self@renanfochetto.dev</a></li>
+                        <li><a href="https://wa.me/5511932303469" target="_blank" aria-label="Whatsapp - Renan Fochetto">+55 11 9 3230-3469</a></li>
                     </ul>
 
                     <!-- Links Social Media -->
                     <ul class="flex-row">
                         <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/renanfochetto">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/renanfochetto" aria-label="Linkedin - Renan Fochetto">
                                 <svg
                                         class="image-small"
                                         width="11.90625mm"
@@ -90,7 +87,7 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/renanfochetto">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/renanfochetto" aria-label="GitHub - Renan Fochetto">
                                 <svg
                                         class="image-small"
                                         width="45"
@@ -111,7 +108,7 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rnn.arts/" >
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rnn.arts/" aria-label="Instagram - Renan Fochetto">
                                 <svg
                                         class="image-small"
                                         width="11.90625mm"
@@ -143,131 +140,131 @@
                 <div class="container">
                     <ul class="technologies grid">
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/html.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/html.svg" alt="HTML" loading="lazy">
                             HTML
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/css.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/css.svg" alt="CSS" loading="lazy">
                             CSS
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/javascript.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/javascript.svg" alt="JavaScript" loading="lazy">
                             Javascript
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/typescript.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/typescript.svg" alt="Typescript" loading="lazy">
                             Typescript
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/react.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/react.svg" alt="React" loading="lazy">
                             React
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/react_n.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/react_n.svg" alt="React Native" loading="lazy">
                             React Native
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/expo.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/expo.svg" alt="Expo" loading="lazy">
                             Expo
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/angular.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/angular.svg" alt="Angular" loading="lazy">
                             Angular
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/vue_js.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/vue_js.svg" alt="Vue.js" loading="lazy">
                             Vue.js
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/next_js.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/next_js.svg" alt="Next.js" loading="lazy">
                             Next.js
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/node.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/node.svg" alt="Node.js" loading="lazy">
                             Node.js
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/rest_api.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/rest_api.svg" alt="REST API" loading="lazy">
                             REST API
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/graph_ql.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/graph_ql.svg" alt="GraphQL" loading="lazy">
                             GraphQL
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/tailwind.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/tailwind.svg" alt="TailWind" loading="lazy">
                             TailWind
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/sass.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/sass.svg" alt="SASS" loading="lazy">
                             SASS
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/bootstrap.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/bootstrap.svg" alt="Bootstrap" loading="lazy">
                             Bootstrap
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/git.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/git.svg" alt="Git" loading="lazy">
                             Git
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/github.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/github.svg" alt="GitHub" loading="lazy">
                             GitHub
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/vite.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/vite.svg" alt="Vite" loading="lazy">
                             Vite
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/webpack.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/webpack.svg" alt="WebPack" loading="lazy">
                             WebPack
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/dev_tools.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/dev_tools.svg" alt="DevTools" loading="lazy">
                             DevTools
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/jest.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/jest.svg" alt="Jest" loading="lazy">
                             Jest
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/cypress.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/cypress.svg" alt="Cypress" loading="lazy">
                             Cypress
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/playwright.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/playwright.svg" alt="PlayWright" loading="lazy">
                             PlayWright
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/figma.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/figma.svg" alt="Figma" loading="lazy">
                             Figma
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/vs_code.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/vs_code.svg" alt="VS Code" loading="lazy">
                             VS Code
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/vercel.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/vercel.svg" alt="Vercel" loading="lazy">
                             Vercel
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/npm.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/npm.svg" alt="NPM" loading="lazy">
                             NPM
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/eslint.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/eslint.svg" alt="EsLint" loading="lazy">
                             EsLint
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/powershell.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/powershell.svg" alt="PowerShell" loading="lazy">
                             PowerShell
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/webstorm.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/webstorm.svg" alt="WebStorm" loading="lazy">
                             WebStorm
                         </li>
                         <li class="flex-column center">
-                            <img class="image-small" src="assets/icons/tech/copilot.svg" alt="">
+                            <img class="image-small" src="assets/icons/tech/copilot.svg" alt="Copilot" loading="lazy">
                             Copilot
                         </li>
                     </ul>
@@ -289,8 +286,8 @@
                     <div class="process-column flex-column" data-type="odd">
                         <div class="process-card border-process flex-column">
                             <div class="process-icons flex">
-                                <img class="image-large" src="assets/icons/process/lupa.svg" alt="">
-                                <img class="image-large" src="assets/icons/process/atomo.svg" alt="">
+                                <img class="image-large" src="assets/icons/process/lupa.svg" alt="Lupa" loading="lazy">
+                                <img class="image-large" src="assets/icons/process/atomo.svg" alt="Átomo" loading="lazy">
                             </div>
                             <h4>From Concept to Direction</h4>
                             <p class="text-left">
@@ -301,8 +298,8 @@
                         </div>
                         <div class="process-card border-process flex-column">
                             <div class="process-icons flex">
-                                <img class="image-large" src="assets/icons/process/wireframe.svg" alt="">
-                                <img class="image-large" src="assets/icons/process/engrenagem.svg" alt="">
+                                <img class="image-large" src="assets/icons/process/wireframe.svg" alt="Wireframe" loading="lazy">
+                                <img class="image-large" src="assets/icons/process/engrenagem.svg" alt="engrenagem" loading="lazy">
                             </div>
                             <h4>Modeling Concepts</h4>
                             <p class="text-left">
@@ -313,8 +310,8 @@
                         </div>
                         <div class="process-card border-process flex-column">
                             <div class="process-icons flex">
-                                <img class="image-large" src="assets/icons/process/chegada.svg" alt="">
-                                <img class="image-large" src="assets/icons/process/responsive.svg" alt="">
+                                <img class="image-large" src="assets/icons/process/chegada.svg" alt="Bandeira de Chegada" loading="lazy">
+                                <img class="image-large" src="assets/icons/process/responsive.svg" alt="Dispositivo Responsivo" loading="lazy">
                             </div>
                             <h4>The Final Answer</h4>
                             <p class="text-left">
@@ -331,8 +328,8 @@
                     <div class="process-column flex-column" data-type="even">
                         <div class="process-card border-process flex-column content-end">
                             <div class="process-icons flex">
-                                <img class="image-large" src="assets/icons/process/funil.svg" alt="">
-                                <img class="image-large" src="assets/icons/process/ideia.svg" alt="">
+                                <img class="image-large" src="assets/icons/process/funil.svg" alt="Funil" loading="lazy">
+                                <img class="image-large" src="assets/icons/process/ideia.svg" alt="Ideia" loading="lazy">
                             </div>
                             <h4>Filtering Ideas</h4>
                             <p class="text-right">
@@ -343,8 +340,8 @@
                         </div>
                         <div class="process-card border-process flex-column content-end">
                             <div class="process-icons flex">
-                                <img class="image-large" src="assets/icons/process/ciclo.svg" alt="">
-                                <img class="image-large" src="assets/icons/process/microscopio.svg" alt="">
+                                <img class="image-large" src="assets/icons/process/ciclo.svg" alt="Ciclo" loading="lazy">
+                                <img class="image-large" src="assets/icons/process/microscopio.svg" alt="Microscópio" loading="lazy">
                             </div>
 
                             <h4>Refining the Essence</h4>
@@ -372,7 +369,7 @@
 
                         <!-- Image Project -->
                         <div class="card-image">
-                            <img class="image-wide border-card shadow-card" src="assets/images/space_app.avif" alt="">
+                            <img class="image-wide border-card shadow-card" src="assets/images/space_app.avif" alt="Imagem do Site SpaceApp" loading="lazy">
                         </div>
 
                         <!-- Project Info -->
@@ -439,10 +436,10 @@
                     <div class="project-gallery flex-column">
 
                         <!-- Projects -->
-                        <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/space_app.avif" alt=""></div>
-                        <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/fungi_finders.avif" alt=""></div>
-                        <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/aluroni.avif" alt=""></div>
-                        <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/trato_tech.avif" alt=""></div>
+                        <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/space_app.avif" alt="Imagem de galeria do site SpaceAPP" loading="lazy"></div>
+                        <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/fungi_finders.avif" alt="Imagem de galeria do site FungiFinders" loading="lazy"></div>
+                        <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/aluroni.avif" alt="Imagem de galeria do site Aluroni" loading="lazy"></div>
+                        <div class="flex-center center"><img class="image-wide border-gallery shadow-gallery" src="assets/images/trato_tech.avif" alt="Imagem de galeria do site TratoTech" loading="lazy"></div>
                     </div>
                 </div>
             </section>
@@ -454,8 +451,8 @@
 
                 <!-- Footer Contact -->
                 <ul class="flex-column">
-                    <li><a href="mailto:self@renanfochetto.dev">self@renanfochetto.dev</a></li>
-                    <li><a href="https://wa.me/5511932303469" target="_blank">+55 11 9 3230-3469</a></li>
+                    <li><a href="mailto:self@renanfochetto.dev" aria-label="Enviar email para Renan Fochetto">self@renanfochetto.dev</a></li>
+                    <li><a href="https://wa.me/5511932303469" target="_blank" aria-label="Whatsapp - Renan Fochetto">+55 11 9 3230-3469</a></li>
                 </ul>
             </div>
 
@@ -467,7 +464,7 @@
             <!-- Footer Social Media -->
             <ul class="flex-center center">
                 <li>
-                    <a href="mailto:self@renanfochetto.dev">
+                    <a href="mailto:self@renanfochetto.dev" aria-label="Enviar email para Renan Fochetto">
                         <svg
                                 class="image-small"
                                 width="11.90625mm"
@@ -485,7 +482,7 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/renanfochetto">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/renanfochetto" aria-label="Linkedin - Renan Fochetto">
                         <svg
                                 class="image-small"
                                 width="11.90625mm"
@@ -501,7 +498,7 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/renanfochetto">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/renanfochetto" aria-label="GitHub - Renan Fochetto">
                         <svg
                                 class="image-small"
                                 width="45"
@@ -522,7 +519,7 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rnn.arts/">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rnn.arts/" aria-label="Instagram - Renan Fochetto">
                         <svg
                                 class="image-small"
                                 width="11.90625mm"
