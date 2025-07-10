@@ -1,22 +1,25 @@
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('/assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+    src: url('/assets/fonts/JetBrainsMono-VariableFont_wght.woff2') format('woff2');
     font-weight: 100 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Lacquer';
-    src: url('/assets/fonts/Lacquer-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/Lacquer-Regular.woff2') format('woff2');
     font-weight: 100 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Jost';
-    src: url('/assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+    src: url('/assets/fonts/Jost-VariableFont_wght.woff2') format('woff2');
     font-weight: 100 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @layer reset, base, layout, utilities, components;

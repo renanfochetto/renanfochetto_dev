@@ -13,9 +13,9 @@ const initPortfolio = () => {
   // Cores das Seções
   const sectionColors = {
     tools: "#ffb347",
-    process: "#fe6bb6",
-    projects: "#4ae4fe",
-    footer: "#4ae4fe"
+    process: "#e7549d",
+    projects: "#32c7e5",
+    footer: "#32c7e5",
   };
 
   // Funções para Manipulação de Cores e Scroll
@@ -104,13 +104,19 @@ const initPortfolio = () => {
   // Funções para Atualizar o DOM com os Projetos
   const updateDOMWithProject = (project) => {
     $('.card-title h5').textContent = project.nome;
+
     const img = $('.card-image img');
     img.src = project.imagem;
     img.alt = project.alt;
+
     $('.card-description p').textContent = project.descricao;
+
     const [repoLink, deployLink] = $$('.card-links a');
     repoLink.href = project.repositorio;
+    repoLink.setAttribute('aria-label', `Ver repositório no Github do projeto ${project.nome}`);
+
     deployLink.href = project.deploy;
+    deployLink.setAttribute('aria-label', `Abrir o site do projeto ${project.nome}`);
   };
 
   // Função para Definir o Card Ativo na Galeria
