@@ -372,9 +372,14 @@
         padding-inline: 2rem;
     }
 
-    /*Title Padding*/
+    /*Title*/
     .title-section {
         padding: 2rem;
+        transition: transform 0.3s ease;
+    }
+
+    .title-section:hover {
+        transform: scale(1.01);
     }
 
     @media (width < 1080px) {
@@ -623,14 +628,7 @@
         }
     }
 
-    section > div > h3 {
-        transition: transform 0.3s ease;
-    }
-
-    section > div > h3:hover {
-        transform: scale(1.01);
-    }
-
+    
     /*Principal*/
     .principal {
         padding-inline: 1rem;
