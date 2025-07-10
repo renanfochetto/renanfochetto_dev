@@ -374,6 +374,7 @@
 
     /*Title*/
     .title-section {
+        display: inline-block;
         padding: 2rem;
         transition: transform 0.3s ease;
     }
