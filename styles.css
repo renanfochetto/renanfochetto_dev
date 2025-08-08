@@ -1122,7 +1122,7 @@
 @layer animations {
     .wave {
         display: inline-block;
-        animation: wave-animation 2s ease-in-out 0.5s 2;
+        animation: wave-animation 2s ease-in-out 1.4s 3;
         transform-origin: 70% 70%;
     }
 
@@ -1137,13 +1137,13 @@
         100% { transform: rotate(0deg); }
     }
 
-    /*1ª Etapa*/
+    /*Header Animation*/
     .header {
         border-bottom: 2px solid transparent;
         box-shadow: none;
         animation:
-                header-border 0.6s ease-out forwards,
-                header-shadow 0.6s ease-out 0.6s forwards;
+                header-border 0.4s ease-out forwards,
+                header-shadow 0.4s ease-out 0.4s forwards;
     }
 
     @keyframes header-border {
@@ -1163,7 +1163,7 @@
     .header .nav {
         opacity: 0;
         transform: translateY(40px);
-        animation: header-content 0.6s ease-out 0.6s forwards;
+        animation: header-content 0.4s ease-out 0.4s forwards;
     }
 
     @keyframes header-content {
@@ -1173,7 +1173,70 @@
         }
     }
 
+    /*Contact Animation*/
+    .contact {
+        border-right: 2px solid transparent;
+        box-shadow: none;
+        animation:
+                contact-border 0.8s ease-out forwards,
+                contact-shadow 0.8s ease-out 0.8s forwards;
+    }
+
+    @keyframes contact-border {
+        to {
+            border-right: var(--border-type);
+        }
+    }
+
+    @keyframes contact-shadow {
+        to {
+            box-shadow: var(--shadow-contact);
+        }
+    }
+
+    /*2ª Etapa*/
+    .contact ul:first-of-type li {
+        opacity: 0;
+        transform: translateX(30px);
+        animation: contact-link-fade 0.8s ease-out 0.8s forwards;
+    }
+
     /*3ª Etapa*/
+    .contact ul:last-of-type li {
+        opacity: 0;
+        transform: translateX(30px);
+        animation: contact-social-fade 0.8s ease-out 0.8s forwards;
+    }
+
+    @keyframes contact-link-fade {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes contact-social-fade {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /*Intro Animation*/
+    .intro {
+        opacity: 0;
+        transform: translateX(-50px);
+        animation: slideInLeft 1.2s ease-out 1.2s forwards;
+    }
+
+    @keyframes slideInLeft {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
 }
 
 
