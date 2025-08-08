@@ -527,17 +527,6 @@
     .shadow-footer {
         box-shadow: var(--shadow-footer);
     }
-
-    .animate-on-scroll {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-
-    .animated {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 @layer components {
@@ -1133,7 +1122,7 @@
 @layer animations {
     .wave {
         display: inline-block;
-        animation: wave-animation 2s ease-in-out 1.4s 3;
+        animation: wave-animation 1.6s ease-in-out 1.4s 3;
         transform-origin: 70% 70%;
     }
 
@@ -1246,7 +1235,6 @@
             transform: translateX(0);
         }
     }
-
 
 }
 
