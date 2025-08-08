@@ -176,5 +176,6 @@ const initPortfolio = () => {
   autoRotate();
 };
 
+
 // Evento de Carregamento do DOM
 document.addEventListener('DOMContentLoaded', initPortfolio);
