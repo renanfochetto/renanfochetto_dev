@@ -120,7 +120,7 @@
     :root {
 
         /*Colors*/
-        --section-color: hsl(48, 87%, 50%);
+        --section-color: #fff9c4;
         --section-color-dark: hsl(0,0%, 0%);
         --section-color-light: hsl(0, 0%, 100%);
 
@@ -1242,9 +1242,9 @@
 
     /*Intro Animation*/
     .intro {
-        opacity: 0;
-        transform: translateX(-50px);
-        animation: slideInLeft 1.2s ease-out 1.2s forwards;
+        opacity: 1;
+        transform: translateX(-5000px);
+        animation: slideInLeft 1s ease-out 1s forwards;
     }
 
     @keyframes slideInLeft {

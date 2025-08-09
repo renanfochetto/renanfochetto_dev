@@ -12,10 +12,10 @@ const initPortfolio = () => {
 
   // Cores das Seções
   const sectionColors = {
-    tools: "#ffb347",
-    process: "#e7549d",
-    projects: "#32c7e5",
-    footer: "#32c7e5",
+    tools: "#ffe0b2",
+    process: "#f8bbd0",
+    projects: "#b3e5fc",
+    footer: "#b3e5fc",
   };
 
   // Funções para Manipulação de Cores e Scroll
@@ -23,7 +23,7 @@ const initPortfolio = () => {
     Math.min(1, Math.max(0, (scrollY - top) / height));
 
   // Função para Obter a Cor da Seção
-  const getColor = (id) => sectionColors[id] || "#f4d03f";
+  const getColor = (id) => sectionColors[id] || "#fff9c4";
 
   // Função para Interpolar Cores
   const interpolateColor = (c1, c2, factor) =>
