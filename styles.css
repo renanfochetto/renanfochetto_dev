@@ -1244,7 +1244,7 @@
     .intro {
         opacity: 1;
         transform: translateX(-5000px);
-        animation: slideInLeft 1s ease-out 1s forwards;
+        animation: slideInLeft 1.8s ease-out 0s forwards;
     }
 
     @keyframes slideInLeft {
