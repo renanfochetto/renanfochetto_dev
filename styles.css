@@ -1243,7 +1243,7 @@
     /*Intro Animation*/
     .intro {
         opacity: 1;
-        transform: translateX(-5000px);
+        transform: translateX(-3000px);
         animation: slideInLeft 1.8s ease-out 0s forwards;
     }
 
